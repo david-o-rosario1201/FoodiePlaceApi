@@ -24,4 +24,6 @@ public class Contexto: DbContext
     public DbSet<Usuarios> Usuarios { get; set; }
 
     public DbSet<Categorias> Categorias { get; set; }
+    public DbSet<Tarjetas> Tarjetas { get; set; }
+    public DbSet<Ofertas> Ofertas { get; set; }
 }
