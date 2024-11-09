@@ -1,4 +1,5 @@
 
+using FoodiePlaceApi.Authentication;
 using FoodiePlaceApi.DAL;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,6 +33,8 @@ namespace FoodiePlaceApi
             //}
 
             app.UseHttpsRedirection();
+
+            app.UseMiddleware<ApiKeyAuthMiddleware>();
 
             app.UseAuthorization();
 
