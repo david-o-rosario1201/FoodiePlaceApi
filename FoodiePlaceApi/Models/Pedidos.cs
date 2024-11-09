@@ -7,7 +7,7 @@ public class Pedidos
     [Key]
     public int PedidoId { get; set; }
 
-    [ForeignKey("Usuario")]
+    [ForeignKey("Usuarios")]
     public int UsuarioId { get; set; }
 
     [Required]

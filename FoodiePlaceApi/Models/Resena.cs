@@ -7,7 +7,7 @@ public class Resena
     [Key]
     public int ResenaId { get; set; }
 
-    [ForeignKey("Usuario")]
+    [ForeignKey("Usuarios")]
     public int UsuarioId { get; set; }
 
     [Required]

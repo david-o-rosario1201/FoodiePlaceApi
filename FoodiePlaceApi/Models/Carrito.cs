@@ -8,7 +8,7 @@ public class Carrito
     [Key]
     public int CarritoId { get; set; }
 
-    [ForeignKey("Usuario")]
+    [ForeignKey("Usuarios")]
     public int UsuarioId { get; set; }
 
     [Required]

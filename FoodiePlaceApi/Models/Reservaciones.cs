@@ -7,7 +7,7 @@ public class Reservaciones
     [Key]
     public int ReservacionId { get; set; }
 
-    [ForeignKey("Usuario")]
+    [ForeignKey("Usuarios")]
     public int UsuarioId { get; set; }
 
     [Required]
