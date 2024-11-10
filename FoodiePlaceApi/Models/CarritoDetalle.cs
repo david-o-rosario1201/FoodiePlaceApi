@@ -21,4 +21,6 @@ public class CarritoDetalle
     public decimal SubTotal { get; set; }
 
     public decimal Propina { get; set; }
+
+    public Boolean Pagado { get; set; }
 }
