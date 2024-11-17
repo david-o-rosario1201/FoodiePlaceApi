@@ -18,4 +18,9 @@ public class Reservaciones
 
     [Required]
     public string Estado { get; set; }
+
+    [Required]
+    public int NumeroMesa { get; set; }
+
+    public DateTime HoraReservacion { get; set; }
 }

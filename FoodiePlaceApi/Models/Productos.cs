@@ -25,4 +25,6 @@ public class Productos
     public bool Disponibilidad { get; set; }
 
     public byte[]? Imagen { get; set; }
+
+    public string Tiempo { get; set; }
 }
