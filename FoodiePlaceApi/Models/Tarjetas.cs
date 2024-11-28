@@ -22,9 +22,7 @@ public class Tarjetas
     public string NumeroTarjeta { get; set; }
 
     [Required]
-    [DataType(DataType.Date)]
-    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-    public DateTime FechaExpiracion { get; set; }
+    public string FechaExpiracion { get; set; }
 
     [Required]
     [StringLength(3, MinimumLength = 3)] // Limita la longitud del CVV a 3 caracteres
