@@ -16,5 +16,8 @@ public class PedidosDetalle
 
     public decimal PrecioUnitario { get; set; }
 
+
+    public decimal Itbis { get; set; }
+
     public decimal SubTotal { get; set; }
 }

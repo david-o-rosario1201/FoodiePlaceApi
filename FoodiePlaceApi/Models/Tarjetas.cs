@@ -28,4 +28,8 @@ public class Tarjetas
     [StringLength(3, MinimumLength = 3)] // Limita la longitud del CVV a 3 caracteres
     [RegularExpression(@"^\d+$", ErrorMessage = "El CVV debe contener solo dígitos.")]
     public string CVV { get; set; }
+
+    [Required(ErrorMessage = "El nombre del titular es obligatorio.")]
+    [StringLength(100, ErrorMessage = "El nombre del titular no puede tener más de 100 caracteres.")]
+    public string NombreTitular {get; set;}
 }

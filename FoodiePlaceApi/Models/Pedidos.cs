@@ -14,13 +14,12 @@ public class Pedidos
     public DateTime FechaPedido { get; set; } = DateTime.Now;
 
     [Required]
-    public decimal Total { get; set; }
-
-    [Required]
     public bool ParaLlevar { get; set; }
 
     [Required]
     public string Estado { get; set; }
+
+    public string Tiempo { get; set; }
 
     [ForeignKey("PedidoId")]
     public ICollection<PedidosDetalle> PedidosDetalle { get; set; } = new List<PedidosDetalle>();

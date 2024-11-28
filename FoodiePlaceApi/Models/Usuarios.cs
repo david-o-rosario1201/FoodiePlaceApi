@@ -22,4 +22,6 @@ public class Usuarios
     [Required(ErrorMessage = "La contraseña es obligatoria.")]
     [StringLength(100, ErrorMessage = "La contraseña debe tener al menos {2} caracteres y máximo {1} caracteres.", MinimumLength = 6)]
     public string Contrasena { get; set; }
+
+    public string FotoPerfil { get; set; }
 }
